@@ -1,0 +1,112 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi",
+                "Hey",
+                "How are you",
+                "Is anyone there?",
+                "Hello",
+                "Good day"
+            ],
+            "responses": [
+                "Hi there, welcome to JIS Group, how can I help you?"
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Bye",
+                "See you later",
+                "Goodbye"
+            ],
+            "responses": [
+                "See you later, thanks for visiting",
+                "Have a nice day",
+                "Bye! Come back again soon."
+            ]
+        },
+        {
+            "tag": "about",
+            "patterns": [
+                "What is JIS Group?",
+                "Can you tell me about JIS Group?",
+                "Please tell me about your group",
+                "I do not know anything about JIS Group",
+                "What is this group for?",
+                "Who is the owner of this group?",
+                "Who owns JIS Group?",
+                "tell JIS Group"
+            ],
+            "responses": [
+                "JIS Group is born out of Sardar Jodh Singh's entrepreneurial vision, which through the years have spanned in the fields of the dairy business, telecommunication, transportation, infrastructure, logistics, education, healthcare, information technology, cargo, and social service. Please visit https://www.jisgroup.org/"
+            ]
+        },
+        {
+            "tag": "courses",
+            "patterns": [
+                "Which courses are offered by your institutions?",
+                "What courses do you offer?",
+                "What are the courses?",
+                "Do you offer engineering courses?",
+                "Do you offer medical courses?"
+            ],
+            "responses": [
+                "We offer Enginnering, Medical, and Healthcare courses"
+            ]
+        },
+        {
+            "tag": "institute",
+            "patterns": [
+                "Which institutes fall under JIS Group?",
+                "college",
+                "colleges associated"
+            ],
+            "responses": [
+                "Guru Nanak Institute of Pharmaceutical Science & Technology,JIS College of Engineering,Narula Institute of Technology,Guru Nanak Institute of Technology,Guru Nanak Institute of Dental Science & Research,Guru Nanak Institute of Hotel Management,Head Office,JIS School Of Polytechnic,Dr. Sudhir Chandra Sur Institute of Technology & Sports Complex,JIS Institute Of Aviation,Greater Kolkata College of Engg. & Management,Asansol Engineering College,Abacus Institute of Engineering & Management,JIS University,Gargi Memorial Institute of Technology,JIS Institute of Skill Development-KOLKATA,Guru Nanak Technical Foundation (GTF),Guru Nanak Polytechnic Foundation (GPF),Narula Public School ( NPS),JIS Foundation,Narula Educational Trust ( NET),JIS Institute of Advanced Studies & Research - JIS University ,JIS INSTITUTE OF SKILL DEVELOPMENT - GUWAHATI,IIMSAR & Dr.BCRHH,JIS INSTITUTE OF SKILL DEVELOPMENT - JHARKHAND,JIS INSTITUTE OF SKILL DEVELOPMENT - BIHAR,HASH TECHNOLOGIES,Haldia Institute Of Dental Sciences & Research (HIDSAR),Sree Narayan Medical Institute & Hospital, Saharsa,GULZAR GROUP OF INSTITUTION ,JISMSR,GURU NANAK EDUCATION TRUST (GET),JIS INDUSTRIAL TRAINING PVT LTD,FLEMMING COLLEGE OF PHARMACY,RHODE ISLAND PUBLIC SCHOOL,LORD BUDDHA KOSHI MEDICAL COLLEGE & HOSPITAL,JIS INSTITUTE OF TRAFFIC MANAGEMENT"
+            ]
+        },
+        {
+            "tag": "admission",
+            "patterns": [
+                "What is the admission criteria?"
+            ],
+            "responses": [
+                "Admission for B.Tech is 60% in X and XII"
+            ]
+        },
+        {
+            "tag": "scholarship",
+            "patterns": [
+                "Is there any scope for scholarship? if yes, what is the criteria?"
+            ],
+            "responses": [
+                "Yes we do provide scholarship you will get the detailed info about it in the college website"
+            ]
+        },
+        {
+            "tag": "fees",
+            "patterns": [
+                "What is the fees structure?"
+            ],
+            "responses": [
+                "Fees structure for B.Tech is 4.5L"
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thanks",
+                "Thank you",
+                "That's helpful",
+                "Thank's a lot!"
+            ],
+            "responses": [
+                "Happy to help!",
+                "Any time!",
+                "My pleasure"
+            ]
+        }
+    ]
+}

@@ -6,6 +6,8 @@ from update_model import update_chatbot
 app = Flask(__name__)
 CORS(app)
 
+#app.debug = True
+
 
 @app.get('/')
 def get_index():

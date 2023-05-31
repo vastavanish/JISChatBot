@@ -18,7 +18,7 @@ from spacy_utils import preprocess_input_sentence, bag_of_words
 
 
 
-with open('jis_intents.json', 'r') as f:
+with open('sir_jis_intents.json', 'r') as f:
     intents = json.load(f)
 
 

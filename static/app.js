@@ -15,7 +15,7 @@ class ChatBox {
 
         openButton.addEventListener('click', () => { this.toggleState(chatBox) });
 
-        sendButton.addEventListener('click', () => { this.toggleState(chatBox) })
+        sendButton.addEventListener('click', () => { this.onSendButton(chatBox) })
 
         const node = chatBox.querySelector('input');
 

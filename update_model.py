@@ -6,7 +6,7 @@ import pandas as pd
 
 import csv
 
-db = DatabaseConnection()
+#db = DatabaseConnection()
 
 
 def update_chatbot(sentence) -> str:

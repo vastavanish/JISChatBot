@@ -7,6 +7,11 @@ nlp = spacy.load("en_core_web_sm")
 # sentence = "There's is Anish!"
 
 
+jis_stopwords = ['name','namely']
+
+for stopword in jis_stopwords:
+    nlp.Defaults.stop_words.remove(stopword)
+
 
 def preprocess_input_sentence(sentence: str):
     '''
@@ -18,12 +23,20 @@ def preprocess_input_sentence(sentence: str):
 
     doc = nlp(sentence)
 
+    
+
     tokenized_list = [token for token in doc if not token.is_punct]
+
 
     stopword_removal_list = [
         token for token in tokenized_list if not token.is_stop]
 
-    lemmatized_list = [token.lemma_.lower() for token in stopword_removal_list if token.is_alpha]
+
+
+    lemmatized_list = [token.lemma_.lower()
+                       for token in stopword_removal_list if token.is_alpha]
+
+
 
     return tokenized_list, lemmatized_list, stopword_removal_list
 

@@ -1,85 +1,762 @@
 {
-    "intents": [
-      {
-        "tag": "greeting",
-        "patterns": [
-          "Hi",
-          "Hey",
-          "How are you",
-          "Is anyone there?",
-          "Hello",
-          "Good day"
-        ],
-        "responses": [
-          "Hey :-)",
-          "Hello!",
-          "Hi there, what can I do for you?",
-          "Hi there, how can I help?"
-        ]
-      },
-      {
-        "tag": "goodbye",
-        "patterns": ["Bye", "See you later", "Goodbye"],
-        "responses": [
-          "See you later, thanks for visiting",
-          "Have a nice day",
-          "Bye! Come back again soon."
-        ]
-      },
-      {
-        "tag": "thanks",
-        "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
-        "responses": ["Happy to help!", "Any time!", "My pleasure"]
-      },
-      {
-        "tag": "items",
-        "patterns": [
-          "Which items do you have?",
-          "What kinds of items are there?",
-          "What do you sell?"
-        ],
-        "responses": [
-          "We sell coffee and tea",
-          "We have coffee and tea"
-        ]
-      },
-      {
-        "tag": "payments",
-        "patterns": [
-          "Do you take credit cards?",
-          "Do you accept Mastercard?",
-          "Can I pay with Paypal?",
-          "Are you cash only?",
-          "Payment"
-        ],
-        "responses": [
-          "We accept VISA, Mastercard and Paypal",
-          "We accept most major credit cards, and Paypal"
-        ]
-      },
-      {
-        "tag": "delivery",
-        "patterns": [
-          "How long does delivery take?",
-          "How long does shipping take?",
-          "When do I get my delivery?"
-        ],
-        "responses": [
-          "Delivery takes 2-4 days",
-          "Shipping takes 2-4 days"
-        ]
-      },
-      {
-        "tag": "funny",
-        "patterns": [
-          "Tell me a joke!",
-          "Tell me something funny!",
-          "Do you know a joke?"
-        ],
-        "responses": [
-          "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
-          "What did the buffalo say when his son left for college? Bison."
-        ]
-      }
-    ]
-  }
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "How are you?",
+        "Is anyone there?",
+        "Hello",
+        "Good day",
+        "What's up",
+        "how are ya",
+        "heyy",
+        "whatsup",
+        "??? ??? ??"
+      ],
+      "responses": [
+        "Hello!",
+        "Good to see you again!",
+        "Hi there, how can I help?"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "cya",
+        "quit",
+        "exit",
+        "see you",
+        "bye bye",
+        "See you later",
+        "Goodbye",
+        "I am Leaving",
+        "Bye",
+        "Have a Good day",
+        "talk to you later"
+      ],
+      "responses": [
+        "Talk to you later",
+        "Goodbye!",
+        "Come back soon"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "about",
+      "patterns": [
+        "what is the name of the developers",
+        "what is the name of the creators",
+        "who created",
+        "who are the developers",
+        "developers",
+        "you are made by",
+        "you are made by whom",
+        "who created you",
+        "who create",
+        "creators",
+        "who made you",
+        "who designed you",
+        "What is JIS Group?",
+        "Can you tell me about JIS Group?",
+        "Please tell me about your group",
+        "I do not know anything about JIS Group",
+        "Who is the owner of this group?",
+        "Who owns JIS Group?",
+        "What is the name of the group?"
+      ],
+      "responses": [
+        "JIS Group is born out of Sardar Jodh Singh's entrepreneurial vision, which through the years have spanned in the fields of the dairy business, telecommunication, transportation, infrastructure, logistics, education, healthcare, information technology, cargo, and social service. Please visit https://www.jisgroup.org/ for details"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "name",
+      "patterns": [
+        "name",
+        "your name",
+        "do you have a name",
+        "what are you called",
+        "what is your name",
+        "what should I call you",
+        "whats your name?",
+        "what are you",
+        "who are you",
+        "who is this",
+        "what am i chatting to",
+        "who am i taking to",
+        "what are you"
+      ],
+      "responses": [
+        "I am JIS Chatbot",
+        "I am JIS Chatbot to help you here"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "hours",
+      "patterns": [
+        "timing of college",
+        "what is college timing",
+        "working days",
+        "when are you guys open",
+        "what are your hours",
+        "hours of operation",
+        "when is the college open",
+        "college timing",
+        "what about college timing",
+        "is college open on saturday",
+        "tell something about college timing",
+        "what is the college  hours",
+        "when should i come to college",
+        "when should i attend college",
+        "what is my college time",
+        "college timing",
+        "timing college"
+      ],
+      "responses": [
+        "College is open 9am-5pm Monday-Saturday! Please visit https://www.jisgroup.org/ for details"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "number",
+      "patterns": [
+        "more info",
+        "contact info",
+        "how to contact college",
+        "college telephone number",
+        "college number",
+        "What is your contact no",
+        "Contact number?",
+        "how to call you",
+        "College phone no?",
+        "how can i contact you",
+        "Can i get your phone number",
+        "how can i call you",
+        "phone number",
+        "phone no",
+        "call"
+      ],
+      "responses": [
+        "Please visit https://www.jisgroup.org/ for details"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "courses",
+      "patterns": [
+        "list of courses",
+        "list of courses offered",
+        "list of courses offered in",
+        "what are the courses offered in your college?",
+        "courses?",
+        "courses offered",
+        "courses offered in (your univrsity(UNI) name)",
+        "courses you offer",
+        "branches?",
+        "courses available at UNI?",
+        "branches available at your college?",
+        "what are the courses are there?",
+        "what are branches there?",
+        "what are courses?",
+        "branches available?",
+        "can you tell me the courses available?",
+        "can you tell me the branches available?",
+        "computer engineering?",
+        "computer",
+        "Computer engineering?",
+        "it",
+        "IT",
+        "Information Technology",
+        "AI/Ml",
+        "Mechanical engineering",
+        "Chemical engineering",
+        "Civil engineering",
+        "Which courses are offered by your institutions?",
+        "What courses do you offer?",
+        "What are the courses?",
+        "Do you offer engineering courses?",
+        "Do you offer medical courses?"
+      ],
+      "responses": [
+        "We offer Enginnering, Medical, and Healthcare courses. Please visit https://www.jisgroup.org/ for details about the courses"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "fees",
+      "patterns": [
+        "information about fee",
+        "information on fee",
+        "tell me the fee",
+        "college fee",
+        "fee per semester",
+        "what is the fee of each semester",
+        "what is the fees of each year",
+        "what is fee",
+        "what is the fees",
+        "how much is the fees",
+        "fees for first year",
+        "fees",
+        "about the fees",
+        "tell me something about the fees",
+        "What is the fees of hostel",
+        "how much is the fees",
+        "hostel fees",
+        "fees for AC room",
+        "fees for non-AC room",
+        "fees for Ac room for girls",
+        "fees for non-Ac room for girls",
+        "fees for Ac room for boys",
+        "fees for non-Ac room for boys"
+      ],
+      "responses": [
+        "Please visit https://www.jisgroup.org/ for details about the fees"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "location",
+      "patterns": [
+        "where is the college located",
+        "college is located at",
+        "where is college",
+        "where is college located",
+        "address of college",
+        "how to reach college",
+        "college location",
+        "college address",
+        "wheres the college",
+        "how can I reach college",
+        "whats is the college address",
+        "what is the address of college",
+        "address",
+        "location",
+        "where is the university located",
+        "university is located at",
+        "where is university",
+        "where is university located",
+        "address of university",
+        "how to reach university",
+        "university location",
+        "university address",
+        "wheres the university",
+        "how can I reach university",
+        "whats is the university address",
+        "what is the address of university",
+        "address",
+        "location"
+      ],
+      "responses": [
+        "Inside JIS group there are a lot of colleges and university located in different locations. Please visit https://www.jisgroup.org/ for details about the individual locations"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "hostel",
+      "patterns": [
+        "hostel facility",
+        "hostel servive",
+        "hostel location",
+        "hostel address",
+        "hostel facilities",
+        "hostel fees",
+        "Does college provide hostel",
+        "Is there any hostel",
+        "Where is hostel",
+        "do you have hostel",
+        "do you guys have hostel",
+        "hostel",
+        "hostel capacity",
+        "what is the hostel fee",
+        "how to get in hostel",
+        "what is the hostel address",
+        "how far is hostel from college",
+        "how far is hostel from university",
+        "hostel university distance",
+        "hostel college distance",
+        "where is the hostel",
+        "how big is the hostel",
+        "distance between college and hostel",
+        "distance between hostel and college",
+        "distance between university and hostel",
+        "distance between hostel and university"
+      ],
+      "responses": [
+        "We do have a lot of hostels in different facilities. Please visit https://www.jisgroup.org/ for details about it"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "event",
+      "patterns": [
+        "events organised",
+        "list of events",
+        "list of events organised in college",
+        "list of events conducted in college",
+        "What events are conducted in college",
+        "Are there any event held at college",
+        "list of events organised in university",
+        "list of events conducted in university",
+        "What events are conducted in university",
+        "Are there any event held at university",
+        "Events?",
+        "functions",
+        "what are the events",
+        "tell me about events",
+        "what about events"
+      ],
+      "responses": [
+        "Many different types of events take place regularly in the colleges and in the University. Please visit https://www.jisgroup.org/ for details about it"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "document",
+      "patterns": [
+        "document to bring",
+        "documents needed for admision",
+        "documents needed at the time of admission",
+        "documents needed during admission",
+        "documents required for admision",
+        "documents required at the time of admission",
+        "documents required during admission",
+        "What document are required for admission",
+        "Which document to bring for admission",
+        "documents",
+        "what documents do i need",
+        "what documents do I need for admission",
+        "documents needed"
+      ],
+      "responses": [
+        "Admission is completely online now-a-days. Please visit https://www.jisgroup.org/ for details about the admission procedures in different facilities"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "floors",
+      "patterns": [
+        "size of campus",
+        "building size",
+        "How many floors does college have",
+        "floors in college",
+        "How many floors does university have",
+        "floors in university",
+        "floors"
+      ],
+      "responses": [
+        "There are many colleges and university in the group and all of them have different campus architecture. Please visit https://www.jisgroup.org/ for details about the individual institution"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "syllabus",
+      "patterns": [
+        "Syllabus for IT",
+        "what is the Information Technology syllabus",
+        "syllabus",
+        "timetable",
+        "what is IT syllabus",
+        "syllabus"
+      ],
+      "responses": [
+        "Depending on the subject, syllabus is either guided by Maulana Abul Kalam Azad University of Technology (MAKAUT) or JIS University. Please visit https://www.jisgroup.org/ for details"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "library",
+      "patterns": [
+        "is there any library",
+        "library facility",
+        "library facilities",
+        "do you have library",
+        "does the college have library facility",
+        "college library",
+        "does the university have library facility",
+        "university library",
+        "where can i get books",
+        "book facility",
+        "Where is library",
+        "Library",
+        "Library information",
+        "Library books information",
+        "Tell me about library",
+        "how many libraries"
+      ],
+      "responses": [
+        "There are huge and ultra-modern libraries available in all our facilities. Please visit https://www.jisgroup.org/ for details"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "infrastructure",
+      "patterns": [
+        "how is college infrastructure",
+        "how is university infrastructure",
+        "infrastructure",
+        "university infrastructure",
+        "college infrastructure"
+      ],
+      "responses": [
+        "We have got state-of-the-art infrastructure in all our colleges and University. Please visit https://www.jisgroup.org/ for details"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "canteen",
+      "patterns": [
+        "food facilities",
+        "canteen facilities",
+        "canteen facility",
+        "is there any canteen",
+        "Is there a cafetaria in college",
+        "Does college have canteen",
+        "Where is canteen",
+        "where is cafetaria",
+        "canteen",
+        "Food",
+        "Cafetaria"
+      ],
+      "responses": [
+        "Our institutions have got canteens with variety of healthy foods available"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "internship",
+      "patterns": [
+        "Do you arrange for internships?",
+        "About internships",
+        "internship",
+        "What about internships?",
+        "Do you encourage internships?"
+      ],
+      "responses": [
+        "We strongly encourage internships. Many different companies offer internships to our students and students learn a lot from there and get certificates after successful completion"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "placement",
+      "patterns": [
+        "What is college placement",
+        "Which companies visit in college",
+        "What is average package",
+        "companies visit",
+        "package",
+        "About placement",
+        "placement",
+        "recruitment",
+        "companies"
+      ],
+      "responses": [
+        "We have a very good placement history from inception. Many national and international companies visit us every year for campus interview and internships. Please visit https://www.jisgroup.org/ for getting more information on this"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "principal",
+      "patterns": [
+        "what is the name of principal",
+        "whatv is the principal name",
+        "principal name",
+        "Who is college principal",
+        "Where is principal's office",
+        "principal",
+        "name of principal"
+      ],
+      "responses": [
+        "Different colleges have got different principals. Please visit https://www.jisgroup.org/ for respective principals and their qualifications"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "sem",
+      "patterns": [
+        "exam dates",
+        "exam schedule",
+        "When is semester exam",
+        "Semester exam timetable",
+        "sem",
+        "semester",
+        "exam",
+        "when is exam",
+        "exam timetable",
+        "exam dates",
+        "when is semester"
+      ],
+      "responses": [
+        "Academic Calendar of the respective course or institution can be found at https://www.jisgroup.org/ for details</a>"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "admission",
+      "patterns": [
+        "what is the process of admission",
+        "what is the admission process",
+        "How to take admission in your college",
+        "How to take admission in your University",
+        "What is the process for admission",
+        "admission",
+        "admission process"
+      ],
+      "responses": [
+        "Our admission process is completely online and you need visit https://www.jisgroup.org/ for details"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "scholarship",
+      "patterns": [
+        "scholarship",
+        "Is scholarship available",
+        "scholarship engineering",
+        "scholarship it",
+        "scholarship ce",
+        "scholarship mechanical",
+        "scholarship civil",
+        "scholarship chemical",
+        "scholarship for AI/ML",
+        "available scholarships",
+        "scholarship for computer engineering",
+        "scholarship for IT engineering",
+        "scholarship for mechanical engineering",
+        "scholarship for civil engineering",
+        "scholarship for chemical engineering",
+        "list of scholarship",
+        "comps scholarship",
+        "IT scholarship",
+        "mechanical scholarship",
+        "civil scholarship",
+        "chemical scholarship",
+        "automobile scholarship",
+        "first year scholarship",
+        "second year scholarship",
+        "third year scholarship",
+        "fourth year scholarship"
+      ],
+      "responses": [
+        "We offer different level of scholarships for our students. During admission please check about the available scholarships for your course. You can also visit https://www.jisgroup.org/ for details"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "facilities",
+      "patterns": [
+        "What facilities college provide",
+        "University facility",
+        "What are university facilities",
+        "College facility",
+        "What are college facilities",
+        "facilities",
+        "facilities provided"
+      ],
+      "responses": [
+        "Our institution provides state-of-the-art facilities in our every colleges and University. Please visit https://www.jisgroup.org/ for details"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "intake",
+      "patterns": [
+        "max number of students",
+        "number of seats per branch",
+        "number of seats in each branch",
+        "maximum number of seats",
+        "maximum students intake",
+        "What is college intake",
+        "What is university intake",
+        "how many stundent are taken in each branch",
+        "seat allotment",
+        "seats"
+      ],
+      "responses": [
+        "Different department has got different intake planning and that changes every year. Please visit https://www.jisgroup.org/ for details"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "uniform",
+      "patterns": [
+        "college dress code",
+        "college dresscode",
+        "university dress code",
+        "university dresscode",
+        "what is the uniform",
+        "can we wear casuals",
+        "Does university have an uniform",
+        "Does college have an uniform",
+        "Is there any uniform",
+        "uniform",
+        "what about uniform",
+        "do we have to wear uniform"
+      ],
+      "responses": [
+        "Yes we have got dress code. Please visit https://www.jisgroup.org/ for details"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "committee",
+      "patterns": [
+        "what are the different committe in university",
+        "different committee in university",
+        "Are there any committee in university",
+        "Give me committee details",
+        "committee",
+        "how many committee are there in university",
+        "what are the different committe in college",
+        "different committee in college",
+        "Are there any committee in college",
+        "Give me committee details",
+        "how many committee are there in college"
+      ],
+      "responses": [
+        "Please visit https://www.jisgroup.org/ for details"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "random",
+      "patterns": [
+        "I love you",
+        "Will you marry me",
+        "Do you love me"
+      ],
+      "responses": [
+        "I am not program for this, please ask appropriate query"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "swear",
+      "patterns": [
+        "fuck",
+        "bitch",
+        "shut up",
+        "hell",
+        "stupid",
+        "idiot",
+        "dumb ass",
+        "asshole",
+        "fucker"
+      ],
+      "responses": [
+        "please use appropriate language",
+        "Maintaining decency would be appreciated"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "vacation",
+      "patterns": [
+        "holidays",
+        "when will semester starts",
+        "when will semester end",
+        "when is the holidays",
+        "list of holidays",
+        "Holiday in these year",
+        "holiday list",
+        "about vacations",
+        "about holidays",
+        "When is vacation",
+        "When is holidays",
+        "how long will be the vacation"
+      ],
+      "responses": [
+        "Academic calender is determined by the University. Please visit https://www.jisgroup.org/ for details"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "sports",
+      "patterns": [
+        "sports and games",
+        "give sports details",
+        "sports infrastructure",
+        "sports facilities",
+        "information about sports",
+        "Sports activities",
+        "please provide sports and games information"
+      ],
+      "responses": [
+        "Our institution encourages all-round development of students and hence provides sports facilities in the campus. Please visit https://www.jisgroup.org/ for details"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "salutaion",
+      "patterns": [
+        "okk",
+        "okie",
+        "nice work",
+        "well done",
+        "good job",
+        "thanks for the help",
+        "Thank You",
+        "its ok",
+        "Thanks",
+        "Good work",
+        "k",
+        "ok",
+        "okay"
+      ],
+      "responses": [
+        "I am glad I helped you",
+        "welcome, anything else i can assist you with?"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "task",
+      "patterns": [
+        "what can you do",
+        "what are the thing you can do",
+        "things you can do",
+        "what can u do for me",
+        "how u can help me",
+        "why i should use you"
+      ],
+      "responses": [
+        "I can answer to questions regarding college or University"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "ragging",
+      "patterns": [
+        "ragging",
+        "is ragging practice active in college",
+        "is ragging practice active in university",
+        "does college have any antiragging facility",
+        "is there any ragging cases",
+        "is ragging done here",
+        "ragging against",
+        "antiragging facility",
+        "ragging juniors",
+        "ragging history",
+        "ragging incidents"
+      ],
+      "responses": [
+        "We are Proud to tell you that our college provides ragging free environment, and we have strict rules against ragging"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "hod",
+      "patterns": [
+        "hod",
+        "hod name",
+        "who is the hod"
+      ],
+      "responses": [
+        "HODs differ for each branch, Please visit https://www.jisgroup.org/ for details"
+      ],
+      "context_set": ""
+    }
+  ]
+}

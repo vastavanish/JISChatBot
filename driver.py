@@ -7,7 +7,7 @@ from spacy_utils import bag_of_words, preprocess_input_sentence
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-with open('sir_jis_intents.json', 'r') as f:
+with open('intents.json', 'r') as f:
     intents = json.load(f)
 
 FILE = 'data.pth'
